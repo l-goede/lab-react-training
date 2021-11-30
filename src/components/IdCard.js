@@ -11,7 +11,7 @@ function IdCard(props) {
         Birth: {props.birth.getFullYear()}-{props.birth.getMonth()}-
         {props.birth.getDay()}
       </p>
-      <img src={props.picture}></img>
+      <img src={props.picture} alt=""></img>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import IdCard from './components/IdCard';
 import Greeting from './components/Greeting';
 import Random from './components/Random';
@@ -7,6 +6,9 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 import './App.css';
 
 function App() {
@@ -94,6 +96,12 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton />
+      <ClickablePicture
+        img="https://github.com/ironhack-labs/lab-react-training/blob/master/src/assets/images/maxence.png?raw=true"
+        imgClicked="https://github.com/ironhack-labs/lab-react-training/blob/master/src/assets/images/maxence-glasses.png?raw=true"
+      />
+      <Dice />
     </>
   );
 }
