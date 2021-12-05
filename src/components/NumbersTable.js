@@ -13,7 +13,7 @@ function NumbersTable(limit) {
     <div>
       {table.map((elem, index) => {
         return (
-          <div key={index} style={{ backgroundColor: elem.backGroundColor }}>
+          <div key={index} style={{ backgroundColor: elem.backgroundColor }}>
             {elem.number}
           </div>
         );
