@@ -9,6 +9,9 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+
 import './App.css';
 
 function App() {
@@ -102,6 +105,15 @@ function App() {
         imgClicked="https://github.com/ironhack-labs/lab-react-training/blob/master/src/assets/images/maxence-glasses.png?raw=true"
       />
       <Dice />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      <NumbersTable limit={12} />
     </>
   );
 }
